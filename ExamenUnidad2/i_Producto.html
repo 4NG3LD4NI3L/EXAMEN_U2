@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #f2f2f2;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            margin: 20px;
-        }
-    </style><title>Info del Producto</title>
-    <link rel="stylesheet" href="info_Producto.css" />
+    <title>confi</title>
+    <link rel="stylesheet" type="text/css" href="info_Producto.css">
 </head>
 
 <body>
@@ -35,21 +23,41 @@
     <header>
         <h1>Información del Producto</h1>
     </header>
+    <div id="Centro">
+        <h2>Nombre del Producto</h2>
+        <p>Descripción del producto.</p>
+        <p>Precio: $XX.XX</p>
+    </div>
     <main>
-        <div>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            <h2>Nombre del Producto</h2>
-            <p>Descripción del producto.</p>
-            <p>Precio: $XX.XX</p>
-            <form>
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad" min="1" value="1">
-                <br>
-                <input type="submit" value="Agregar al Carrito">
-            </form>
-        </div>
-    
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" required>
+            <input type="submit" value="Agregar al Carrito">
+            <input type="submit" value="Comprar">
+        </form>
+        <table>
+            <tr>
+                <th>Característica</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>Marca</td>
+                <td>Nombre de la marca</td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td>Color del producto</td>
+            </tr>
+            <!-- Añade más filas según las características del producto -->
+        </table>
+
     </main>
-    
 </body>
+
 </html>

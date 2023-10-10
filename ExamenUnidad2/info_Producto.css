@@ -96,30 +96,17 @@
         cursor: pointer;
     }
     
-    div#Formulario{
-        width: 65vh;
+    div#Centro{
+        width: 55vh;
         height: 52vh;
-        border: 3px solid black;
+        border: 3px ;
         margin: auto;
         margin-top: 13vh;
         font-family: Arial, Helvetica, sans-serif;
         border-radius: 10px;
     }
     
-    button#regreso{
-        display: flex;
-        margin-left: 20px;
-        margin-top: 2vh;
-        width: 60px;
-        height: 30px;
-        background-color:transparent;
-        background-image: url(arrow.png);
-        background-repeat: no-repeat;
-        background-size: 70%;
-        background-position: center;
-        border: none;
-        cursor: pointer;
-    }
+    
     
     h1#titulo{
         text-align: center;
@@ -127,37 +114,7 @@
         margin-top: 2vh;
     }
     
-    h3#correo{
-        margin-top: 3vh;
-        margin-left: 8vh;
-        font-size: 22px;
-    }
-    
-    input#correo{
-        margin-top: 1vh;
-        margin-left: 8vh;
-        width: 45vh;
-        height: 3vh;
-        font-size: 15px;
-        padding-left: 0.5vh;
-        border-radius: 7px;
-    }
-    
-    h3#contra{
-        margin-top: 2vh;
-        margin-left: 8vh;
-        font-size: 22px;
-    }
-    
-    input#contra{
-        margin-top: 1vh;
-        margin-left: 8vh;
-        width: 45vh;
-        height: 3vh;
-        font-size: 15px;
-        padding-left: 0.5vh;
-        border-radius: 7px;
-    }
+   
     
     a#hoc{
         color: black;
@@ -176,50 +133,48 @@
         opacity: 1;
     }
     
-    input#recuerdame{
-        margin-top: 1vh;
-        margin-left: 8vh;
-        cursor: pointer;
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
     }
     
-    label#recuerdame{
-        font-weight: bold;
+    header {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
     }
     
-    button#sesion{
-        margin-top: 2.5vh;
-        margin-left: 8vh;
-        width: 45.5vh;
-        height: 6vh;
-        font-size: 25px;
-        font-weight: bold;
-        background-color: #90C7FA;
-        border-radius: 10px;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    label, input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
         border: none;
         cursor: pointer;
     }
     
-    h5#regis{
-        text-align: right;
-        margin-top: 2vh;
-        margin-right: 6vh;
-        font-weight: 500;
-    }
-    
-    a#linkRegis{
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-    }
-    
-    a#linkRegis:active{
-        color: blue;
-    }
-    
-    a#linkRegis:hover{
-        text-decoration:underline;
-        color: blue;
-    }
+
 }
 
 @media screen and (max-width:767px){
@@ -392,5 +347,4 @@
         color: blue;
     }
 }
-
 
