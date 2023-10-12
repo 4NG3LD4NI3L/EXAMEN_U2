@@ -2,62 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>confi</title>
-    <link rel="stylesheet" type="text/css" href="info_Producto.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pagina Producto</title>
+	<link rel="stylesheet" href="info_Producto.css" />
 </head>
 
 <body>
-    <div id="Superior">
-        <button id="logo"></button>
-        <button id="ubi"></button>
-        <input type="text" name="Buscar" id="Buscar" placeholder="Buscar"><button id="lupa"></button></input>
+	<header>
+		<div id="Superior">
+			<button id="logo"></button>
+			<button id="ubi"></button>
+			<input type="text" name="Buscar" id="Buscar" placeholder="Buscar"><button id="lupa"></button></input>
 
-        <button id="maleU"></button>
+			<button id="maleU"></button>
 
-        <button id="camp"></button>
+			<button id="camp"></button>
 
-        <button id="carrito"></button>
-    </div>
-    <header>
-        <h1>Información del Producto</h1>
-    </header>
-    <div id="Centro">
-        <h2>Nombre del Producto</h2>
-        <p>Descripción del producto.</p>
-        <p>Precio: $XX.XX</p>
-    </div>
-    <main>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+			<button id="carrito"></button>
+		</div>
+	</header>
 
-            <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion" required>
+	<div class="container-title">COGNAC REMY MARTIN X.O. 700ML</div>
 
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="cantidad" required>
-            <input type="submit" value="Agregar al Carrito">
-            <input type="submit" value="Comprar">
-        </form>
-        <table>
-            <tr>
-                <th>Característica</th>
-                <th>Valor</th>
-            </tr>
-            <tr>
-                <td>Marca</td>
-                <td>Nombre de la marca</td>
-            </tr>
-            <tr>
-                <td>Color</td>
-                <td>Color del producto</td>
-            </tr>
-            <!-- Añade más filas según las características del producto -->
-        </table>
+	<main>
+		<div class="container-img">
+			<img src="https://bodegasalianza.vteximg.com.br/arquivos/ids/180341-800-800/0305-1.jpg?v=637560093458000000"
+				alt="imagen-producto" />
+		</div>
+		<div class="container-info-product">
+			<div class="container-price">
+				<span>$5,046.00</span>
+				<i class="fa-solid fa-angle-right"></i>
+			</div>
 
-    </main>
+			<div class="container-details-product">
+				
+			</div>
+
+			<div class="container-add-com">
+				<label for="cantidad">Cantidad:</label>
+				<div class="container-quantity">
+					<input type="number" id="cantidad" name="cantidad" required>
+					<input type="number" placeholder="1" value="1" min="1" class="input-quantity" />
+					<div class="btn-increment-decrement">
+						<i class="fa-solid fa-chevron-up" id="increment"></i>
+						<i class="fa-solid fa-chevron-down" id="decrement"></i>
+					</div>
+				</div>
+				
+
+				
+					<button class="btn-add-to-cart">
+						<i class="fa-solid "></i>
+						Comprar
+					</button>
+					
+
+
+				<button class="btn-add-to-cart">
+					<i class="fa-solid fa-plus"></i>
+					Añadir al carrito
+				</button>
+			</div>
+
+			<div class="container-description">
+				<div class="title-description">
+					<h4>Descripción</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-description">
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Laboriosam iure provident atque voluptatibus
+						reiciendis quae rerum, maxime placeat enim cupiditate
+						voluptatum, temporibus quis iusto. Enim eum qui delectus
+						deleniti similique? Lorem, ipsum dolor sit amet
+						consectetur adipisicing elit. Sint autem magni earum est
+						dolorem saepe perferendis repellat ipsam laudantium cum
+						assumenda quidem quam, vero similique? Iusto officiis
+						quod blanditiis iste?
+					</p>
+				</div>
+			</div>
+
+			<div class="container-additional-information">
+				<div class="title-additional-information">
+					<h4>Información adicional</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-additional-information hidden">
+					<p>-----------</p>
+				</div>
+			</div>
+
+			<div class="container-reviews">
+				<div class="title-reviews">
+					<h4>Reseñas</h4>
+					<i class="fa-solid fa-chevron-down"></i>
+				</div>
+				<div class="text-reviews hidden">
+					<p>-----------</p>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+
+
+	<footer>
+		<p>Footer</p>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
 </body>
 
 </html>
