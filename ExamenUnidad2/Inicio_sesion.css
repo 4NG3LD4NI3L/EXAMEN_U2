@@ -46,9 +46,9 @@
     }
     
     button#lupa{
-        width: 4.7vh;
-        height: 4.7vh;
-        border: 3px solid black;
+        width: 4.6vh;
+        height: 4.6vh;
+        border: 4px solid black;
         background-image: url(Search.png);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -307,7 +307,7 @@
     input#correo{
         margin-top: 1vh;
         margin-left: 5vh;
-        width: 30vh;
+        width: 80%;
         height: 3vh;
         font-size: 15px;
         padding-left: 0.5vh;
