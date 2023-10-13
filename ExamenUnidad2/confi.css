@@ -3,7 +3,30 @@
   margin: 0px;
 }
 
-@media screen and (min-width: 1024px) {
+.ventana{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: static;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:-250px;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#IrVentanaFlotante:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+@media screen and (min-width: 924px) {
   div#Superior {
     width: 100%;
     height: 13vh;
@@ -455,20 +478,22 @@
     color: #222;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 867px) {
   div#Superior {
     width: 100%;
     height: 13vh;
     background-color: rgb(57, 184, 255);
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   button#logo {
-    width: 28vh;
-    height: 4.5vh;
-    margin-left: 10vh;
-    background-image: url(ImgLogo.png);
+    width: 4vh;
+    height: 4vh;
+    margin-left: 2%;
+    background: transparent;
+    background-image: url(imglogo.png);
     background-size: 100%;
     border: none;
     background-repeat: no-repeat;
@@ -476,12 +501,12 @@
   }
 
   button#ubi {
-    width: 5vh;
-    height: 5vh;
-    margin-left: 10vh;
+    width: 4vh;
+    height: 4vh;
+    margin-left: 2%;
     background-image: url(Location.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     border: none;
     background-repeat: no-repeat;
     background-color: rgb(57, 184, 255);
@@ -489,17 +514,17 @@
   }
 
   input#Buscar {
-    width: 70vh;
-    height: 4vh;
-    margin-left: 7vh;
+    width: 20%;
+    height: 3vh;
+    margin-left: 2%;
     border: 3px solid black;
     padding-left: 10px;
     font-size: 19px;
   }
 
   button#lupa {
-    width: 4.7vh;
-    height: 4.7vh;
+    width: 3.7vh;
+    height: 3.8vh;
     border: 3px solid black;
     background-image: url(Search.png);
     background-repeat: no-repeat;
@@ -512,9 +537,9 @@
   button#maleU {
     width: 5vh;
     height: 5vh;
-    margin-left: 10vh;
+    margin-left: 2%;
     background-image: url(Male_User.png);
-    background-size: cover;
+    background-size: 100%;
     border: none;
     background-repeat: no-repeat;
     background-color: rgb(57, 184, 255);
@@ -525,9 +550,9 @@
   button#camp {
     width: 5vh;
     height: 5vh;
-    margin-left: 10vh;
+    margin-left: 2%;
     background-image: url(campana.png);
-    background-size: cover;
+    background-size: 100%;
     border: none;
     background-repeat: no-repeat;
     background-color: rgb(57, 184, 255);
@@ -538,9 +563,9 @@
   button#carrito {
     width: 6vh;
     height: 6vh;
-    margin-left: 10vh;
+    margin-left: 2%;
     background-image: url(carritoCompra.png);
-    background-size: cover;
+    background-size: 100%;
     border: none;
     background-repeat: no-repeat;
     background-color: rgb(57, 184, 255);
@@ -907,4 +932,3 @@
     color: #222;
   }
 }
-
