@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-@media screen and (min-widht:1024px){
+@media screen and (min-width:1024px){
     div#Superior{
         width: 100%;
         height: 13vh;
