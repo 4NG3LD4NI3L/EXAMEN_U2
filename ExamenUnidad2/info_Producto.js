@@ -28,6 +28,8 @@ const toggleAdditionalInformation = document.querySelector(
 	'.title-additional-information'
 );
 const toggleReviews = document.querySelector('.title-reviews');
+const toggleReviews2 = document.querySelector('.title-reviews2');
+const toggleReviews3 = document.querySelector('.title-reviews3');
 
 // Constantes Contenido Texto
 const contentDescription = document.querySelector(
@@ -36,7 +38,11 @@ const contentDescription = document.querySelector(
 const contentAdditionalInformation = document.querySelector(
 	'.text-additional-information'
 );
+
+
 const contentReviews = document.querySelector('.text-reviews');
+const contentReviews2 = document.querySelector('.text-reviews2');
+const contentReviews3 = document.querySelector('.text-reviews3');
 
 // Funciones Toggle
 toggleDescription.addEventListener('click', () => {
@@ -49,4 +55,10 @@ toggleAdditionalInformation.addEventListener('click', () => {
 
 toggleReviews.addEventListener('click', () => {
 	contentReviews.classList.toggle('hidden');
+});
+toggleReviews2.addEventListener('click', () => {
+	contentReviews2.classList.toggle('hidden');
+});
+toggleReviews3.addEventListener('click', () => {
+	contentReviews3.classList.toggle('hidden');
 });
